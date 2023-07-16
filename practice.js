@@ -8,7 +8,6 @@ const MongoDBStore = require('connect-mongodb-session')(session);
 const csrf = require('csurf');
 const flash = require('connect-flash');
 const multer = require('multer');
-const mongodbConfig = require('./util/mongodb.config');
 
 const errorController = require('./controllers/error');
 const User = require('./models/user');
