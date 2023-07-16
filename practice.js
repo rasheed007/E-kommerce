@@ -13,8 +13,11 @@ const mongodbConfig = require('./util/mongodb.config');
 const errorController = require('./controllers/error');
 const User = require('./models/user');
 
+require('dotenv').config();
 
-const MONGODB_URI = mongodbConfig.uri;
+
+
+const MONGODB_URI = process.env.MONGODB_URI
 
 const app = express();
 const store = new MongoDBStore({
