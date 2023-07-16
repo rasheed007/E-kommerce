@@ -1,0 +1,4 @@
+node_modules
+.env
+sendgrid.config.js
+mongodb.config.js
